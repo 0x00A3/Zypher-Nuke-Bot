@@ -210,28 +210,31 @@ async def author(ctx):
 @Zypher.command()
 async def help(ctx):
     await ctx.message.delete()
-    embed=discord.Embed(title=f"‏‏‎                        Zypher Nuker Bot", url="https://zypher.vip", description=f"══════════════════════════════\n\n<a:woah:760150692526162000> **Raid Commands** <a:woah:760150692526162000>\n **Usage: {prefix}raid**\n\n<a:VibeCat:748741750750969927> **Status Commands** <a:VibeCat:748741750750969927>\n **Usage: {prefix}status**\n\n <a:shock:631333310664146956> **Message Utilities** <a:shock:631333310664146956>\n **Usage: {prefix}message**\n\n<:1488:728425249997062174> **Made By VortexThaGod** <:1488:728425249997062174>", color=random.randint(0, 0xffffff))
+    embed=discord.Embed(title=f"‏‏‎                         Zypher Nuker Bot", url="https://zypher.vip", description=f"══════════════════════════════\n\n:smiling_imp: **Raid Commands** :smiling_imp:\n **Usage: {prefix}raid**\n\n:crown: **Status Commands** :crown:\n **Usage: {prefix}status**\n\n :man_detective: **Message Utilities** :man_detective:\n **Usage: {prefix}message**\n\n:zap: Made By VortexThaGod :zap:\n:zap: Vortex#0911 :zap:", color=random.randint(0, 0xffffff))
     embed.set_footer(text=">\ Zypher Nuker Bot /<", icon_url="https://cdn.discordapp.com/attachments/644828337881088003/761297407731564584/unknown.png")
     await ctx.send(embed=embed)
 
 @Zypher.command()
 async def raid(ctx):
     await ctx.message.delete()
-    embed=discord.Embed(title=f"‏‏‎                        Zypher Raid Menu", url="https://zypher.vip", description=f"═════════════════════════════\n\n<a:docHax:676756552350433281> **Raid Commands** <a:docHax:676756552350433281>\n\n**banall - bans everyone in a guild**\n**kickall - kicks everyone in a guild**\n**unbanall - unbans everyone in a guild**\n**crashroles - creates 255 roles**\n**rapechannels - spam makes 255 channels**\n**deletechannels - deletes channels**\n**deleteroles - deletes all roles**\n**allatonce - does it all at once**\n", color=random.randint(0, 0xffffff))
+    embed=discord.Embed(title=f"‏‏‎                                     Zypher Raid Menu", url="https://zypher.vip", description=f"════════════════════════════════════════\n\n:zap: **Raid Commands** :zap:\n\n**banall - bans everyone in a guild**\n**kickall - kicks everyone in a guild**\n**unbanall - unbans everyone in a guild**\n**crashroles - creates 255 roles**\n**rapechannels - spam makes 255 channels**\n**deletechannels - deletes channels**\n**deleteroles - deletes all roles**\n**allatonce - does it all at once**\n\n:zap:Made By VortexThaGod:zap:", color=random.randint(0, 0xffffff))
+    embed.set_image(url="https://cdn.discordapp.com/attachments/654004842653810742/761397937506353152/standard.gif")
     embed.set_footer(text=">\ Zypher Nuker Bot /<", icon_url="https://cdn.discordapp.com/attachments/644828337881088003/761297407731564584/unknown.png")
     await ctx.send(embed=embed)
 
 @Zypher.command()
 async def status(ctx):
     await ctx.message.delete()
-    embed=discord.Embed(title=f"‏‏‎                        Zypher Status Menu", url="https://zypher.vip", description=f"═════════════════════════════\n\n<a:swag:685919966859755537> **Status Commands** <a:swag:685919966859755537>\n\n**Game - Sets Playing Status**\n**Watching - Sets Watching Status**\n**Listening - Sets Listening Status**\n**Streaming - Sets Streaming Status**", color=random.randint(0, 0xffffff))
+    embed=discord.Embed(title=f"‏‏‎                                    Zypher Status Menu", url="https://zypher.vip", description=f"════════════════════════════════════════\n\n:crown: **Status Commands** :crown:\n\n**Game - Sets Playing Status**\n**Watching - Sets Watching Status**\n**Listening - Sets Listening Status**\n**Streaming - Sets Streaming Status**\n\n:zap:Made By VortexThaGod:zap:", color=random.randint(0, 0xffffff))
+    embed.set_image(url="https://cdn.discordapp.com/attachments/654004842653810742/761397937506353152/standard.gif")
     embed.set_footer(text=">\ Zypher Nuker Bot /<", icon_url="https://cdn.discordapp.com/attachments/644828337881088003/761297407731564584/unknown.png")
     await ctx.send(embed=embed)
 
 @Zypher.command()
 async def message(ctx):
     await ctx.message.delete()
-    embed=discord.Embed(title=f"‏‏‎                       Zypher Utility Menu", url="https://zypher.vip", description=f"═════════════════════════════\n\n<a:cocknigga:686371732516372566> **Message Utility Commands** <a:cocknigga:686371732516372566>\n\n**Purge - Purges Your Messages With Amount**\n**delall - deletes all messages**\n**cls - clears terminal**", color=random.randint(0, 0xffffff))
+    embed=discord.Embed(title=f"‏‏‎                                   Zypher Utility Menu", url="https://zypher.vip", description=f"════════════════════════════════════════\n\n:man_detective: **Message Utility Commands** :man_detective:\n\n**Purge - Purges Your Messages With Amount**\n**delall - deletes all messages**\n\n:zap:Made By VortexThaGod:zap:", color=random.randint(0, 0xffffff))
+    embed.set_image(url="https://cdn.discordapp.com/attachments/654004842653810742/761397937506353152/standard.gif")
     embed.set_footer(text=">\ Zypher Nuker Bot /<", icon_url="https://cdn.discordapp.com/attachments/644828337881088003/761297407731564584/unknown.png")
     await ctx.send(embed=embed)
 
@@ -252,12 +255,6 @@ async def purge(ctx, amount: int):
            await message.delete()
         except:
             pass
-
-@Zypher.command()
-async def cls(ctx):
-    await ctx.message.delete()
-    Clear()
-    logo()
 
 @Zypher.command()
 async def game(ctx, *, message):
