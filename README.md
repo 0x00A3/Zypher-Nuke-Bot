@@ -3,7 +3,7 @@ A Simple And Easy Nuke Bot To Use For Discord!
 
 # Modules Needed
 ● discord<br>
-● requests<br><br>
+● requests<br>
 ● random<br>
 ● ctypes<br>
 ● subprocess<br>
